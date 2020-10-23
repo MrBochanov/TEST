@@ -8,9 +8,9 @@ RUN curl -sL https://deb.nodesource.com/setup | bash - && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
     
-ADD sql-files/ /sql-files/
+№ADD sql-files/ /sql-files/
 
 WORKDIR /sql-files
 
-ADD container-files/ /
-RUN chmod 700 /init-example-databases.sh
+№ADD container-files/ /
+№RUN chmod 700 /init-example-databases.sh
